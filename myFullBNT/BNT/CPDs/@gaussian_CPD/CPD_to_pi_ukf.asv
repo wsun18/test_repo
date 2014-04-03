@@ -1,0 +1,39 @@
+
+% Nov.27, 2006
+% I put this function in the 'gaussian_CPD' directory so that it is easy to
+% invoke the parameters from the CPD.
+
+function pi = CPD_to_pi_ukf(CPD, pi_from_parent) ;
+
+Q = CPD.cov ;
+f = CPD.function ;
+f = f + sym('noise') ; % include noise term in the function.
+f_var = CPD.variables(1:end-1) ;
+f_var{end+1} = 'noise' ;
+
+%dom = [CPD.cps CPD.self] ;
+
+L = length(pi_from_parent) ; % how many parents
+% augmented mu and Sigma:
+for i=1:L
+    augmu(i,1) = pi_from_parent{i}.mu ;
+    augSigma(i,i) = pi_from_parent{i}.Sigma ;
+end
+
+% augment to include the noise term
+%augmu(L+1, 1) = 0 ;
+augmu(L+1, 1) = CPD.mean ;
+augSigma(L+1,L+1) = Q ;
+
+% covariances between parents if any.
+
+% if rcond(augSigma) < 1e-3  % if the prior is almost sure (variance close to 0).
+%     f_var = findsym(f) ;
+%     f_var_names = str2word(f_var) ;
+%     pi.mu = subs(f, f_var_names, augmu) ;
+%     pi.Sigma = Q ;     
+%     return ;
+% end
+
+% scaled unscented transformation.
+pi = mysut_wgn(augmu, augSigma, f, f_var) ;  % Note: no Q here as argument.

@@ -1,0 +1,174 @@
+% July 13, 2009
+% Unscented hybrid loopy propagation
+
+clear
+clear all
+close all
+home
+fprintf('\n')
+disp('====================================')
+disp('Prognos - Message passing testing for discrete networks')
+
+%addpath('D:\wsun_workAnyWhere\My Dropbox\myResearch\matlab\AppGaussianProduct') ;
+addpath ../AppGaussianProduct
+
+%addpath('D:\wsun_workAnyWhere\My Dropbox\myResearch\matlab\myModel');
+%addpath('D:\wsun_workAnyWhere\My Dropbox\myResearch\matlab\wsun_lib') ;
+addpath ../myModel
+addpath ../wsun_lib
+
+%bnet = mk_testnet_abcde_91710('orig');
+%bnet = mk_asia_bnet('orig');
+bnet = mk_pureDiscreteWithDeterministicNode_bnet('orig') ;
+%bnet = mk_abxw_testnet9('disc');
+%rmpath C:\MATLAB7\work\myResearch\myModel ;
+
+%draw_graph(bnet.dag) ;
+
+N = length(bnet.node_sizes) ;
+observed = find_leaf(bnet.dag) ;
+
+%%%%% compute the likelihood of evidence set
+% suppose three evidence nodes e1, e2, e3
+% P(e1,e2,e3) = P(e3|e2,e1)*P(e2|e1)*P(e1) according to chain rule.
+
+evids = cell(1,N);
+
+% if (length(bnet.cnodes) * length(bnet.dnodes)) == 0 %purely discrete or continuous network
+%     pearl_fpost = pearl_mp(bnet, evids);
+%     perf_plot_purebnet(bnet, jt_post, pearl_fpost); %Performance review for pure network
+% else %hybrid network
+%     hlp_fpost = hlp_hybrid(bnet, evids);
+%     %perf_plot_hybrid(bnet, jt_post, hlp_fpost); %Performance review for hybrid network
+% end
+% 
+% for iu=1:length(bnet.dnodes)
+%     dprior{iu} = hlp_fpost{iu} ;
+% end
+
+% 100 simulation runs.
+for k=1:1
+    
+k
+ev = sample_bnet(bnet);
+evids(observed) = ev(observed) 
+%evids{3} = 1 ;
+%evids{5} = 1 ;
+%evids(observed) = {1 1};
+
+%bnet.observed = find(~isemptycell(evidence)); 
+
+engine_jtree = jtree_inf_engine(bnet);
+%engine_jtree = stab_cond_gauss_inf_engine(bnet);
+
+%w = evid_likelihood(engine_jtree, evids) ; 
+%fprintf('*** Evidence likelihood is %e. \n', w) ;
+%pause
+
+hidden = find(isemptycell(evids)); 
+chidden = intersect(bnet.cnodes, hidden);
+dhidden = intersect(bnet.dnodes, hidden);
+
+%%%%%%%%%%%%% Junction Tree Inference for the original model %%%%%%%%
+tic ;
+[engine_jtree, ll] = enter_evidence(engine_jtree, evids) ;
+
+fprintf('\n   *+++ Results by JunctionTree for original model: \n')
+jt_post = cell(1,N) ;
+for j=hidden
+    nm = bnet.node_names{j} ; % node name.    
+    marg = marginal_nodes(engine_jtree, j) ; % bnet.names(nm)) ;
+    jt_post{j}.domain = marg.domain ;
+    if isin(j, bnet.cnodes)
+        fprintf('%s.bel - mu: %g, Sigma: %g. \n', nm, marg.mu, marg.Sigma) ;         
+        jt_post{j}.mu = marg.mu ;
+        jt_post{j}.Sigma = marg.Sigma ;
+    else
+        %fprintf('posterior marginal of %s: [%g %g] \n', nm, marg.T(1), marg.T(2)) ;        
+        fprintf('posterior marginal of %s is: [', nm); 
+        for i=1:bnet.node_sizes(j)
+            fprintf('%g ', marg.T(i)) ;
+        end
+        fprintf('] \n') ;            
+        jt_post{j}.T = marg.T ;        
+    end    
+end
+t1 = toc ; 
+
+if (length(bnet.cnodes) * length(bnet.dnodes)) == 0 %purely discrete or continuous network
+    pearl_fpost = pearl_mp(bnet, evids);
+    %perf_plot_purebnet(bnet, jt_post, pearl_fpost); %Performance review for pure network
+else %hybrid network
+    hlp_fpost = hlp_hybrid(bnet, evids);
+    %perf_plot_hybrid(bnet, jt_post, hlp_fpost); %Performance review for hybrid network
+end
+
+%pause
+
+if 1
+%%% Direct Message Passing for hybrid Bayesian network %%%%%%%%%%%
+% tic ;
+%[msg bel] = mparallel_hybrid(bnet, evids) ;
+[msg bel] = mparallel_hybrid_gmm(bnet, evids) ;
+%[msg bel] = mparallel3_hybrid_gmm(bnet, evids) ;
+% t1 = toc ;
+% 
+fprintf('   * Results by Direct Message Passing:+++++++++ \n')
+show_bel_gauss(bnet, bel, evids) ;
+
+%bk_ev(k,:) = [ev{3} ev{8}] ;
+% nerror(k,1) = myround(abs(hlp_fpost{1}(1) - bel{1}(1))); %/jt_post{1}.T(1) ;
+% nerror(k,2) = myround(abs(hlp_fpost{2}(1) - bel{2}(1))); %/jt_post{2}.T(1) ;
+% nerror(k,3) = myround(abs(hlp_fpost{3}(1) - bel{3}(1)));
+% nerror(k,4) = myround(abs(hlp_fpost{4}(1) - bel{4}(1)));
+% nerror(k,5) = myround(abs(hlp_fpost{5}(1) - bel{5}(1)));
+% nerror(k,6) = myround(abs(hlp_fpost{6}(1) - bel{6}(1)));
+
+% for j=1:6
+%     nerror(k,j) = myround(abs(jt_post{j}.T(1) - hlp_fpost{j}(1))) ; 
+%     %nerror(k,j) = myround(abs(jt_post{j}.T(1) - bel{j}(1))) ; 
+%     %diffpp(k,j) = discreteKL(hlp_fpost{j}, dprior{j}) ;
+% end
+
+% for j=1:6
+%     nerror(k,j) = discreteKL(hlp_fpost{j}, bel{j}); 
+%     diffpp(k,j) = discreteKL(hlp_fpost{j}, dprior{j}) ;
+% end
+
+% for j=1:6
+%     nerror(k,j) = averageAPE(hlp_fpost{j}, bel{j}); 
+%     diffpp(k,j) = averageAPE(hlp_fpost{j}, dprior{j}) ;
+% end
+
+% difference between prior and post
+% diffpp(k,1) = myround(abs(hlp_fpost{1}(1) - 0.5)); 
+% diffpp(k,2) = myround(abs(hlp_fpost{2}(1) - 0.45));
+% diffpp(k,3) = myround(abs(hlp_fpost{3}(1) - 0.5));
+% diffpp(k,4) = myround(abs(hlp_fpost{4}(1) - 0.55));
+% diffpp(k,5) = myround(abs(hlp_fpost{5}(1) - 0.5));
+% diffpp(k,6) = myround(abs(hlp_fpost{6}(1) - 0.505));
+
+end
+
+end
+
+if 0
+%eed = [mean(nerror); mean(diffpp); max(nerror); max(diffpp)]';
+eer = [mean(nerror); max(nerror)]';
+% figure(1)
+% bar(eed,.6)
+% set(gca,'XTickLabel',{'V','A', 'L', 'B', 'H', 'C'})
+% title('Average and maximum errors after combining pi only')
+% legend('Average error','Average diff', 'Maximum error', 'Maximum diff')
+% xlabel('Hidden discrete nodes')
+% ylabel('Average absolute errors')
+
+figure(2)
+bar(eer,.6)
+set(gca,'XTickLabel',{'V','A', 'L', 'B', 'H', 'C'})
+title('Average and maximum errors after combining pi only')
+legend('Average error','Maximum error')
+xlabel('Hidden discrete nodes')
+ylabel('Average absolute errors')
+
+end

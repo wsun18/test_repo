@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<xbifns:XMLBIF version="0.7" xmlns:xbifns="http://unbbayes.sourceforge.net/xml/XMLBIF_0_7.xsd">
+  <xbifns:header>
+    <xbifns:version>1.0</xbifns:version>
+    <xbifns:name>New BN</xbifns:name>
+    <xbifns:creator>UnBBayes</xbifns:creator>
+  </xbifns:header>
+  <xbifns:staticProperty>
+    <xbifns:nodeSize>0</xbifns:nodeSize>
+    <xbifns:nodeFontSize>0</xbifns:nodeFontSize>
+    <xbifns:colorUtilityNode>0</xbifns:colorUtilityNode>
+    <xbifns:colorDecisionNode>0</xbifns:colorDecisionNode>
+    <xbifns:colorDiscreteProbabilisticNode>0</xbifns:colorDiscreteProbabilisticNode>
+    <xbifns:colorContinuousProbilisticNode>0</xbifns:colorContinuousProbilisticNode>
+    <xbifns:colorExplanationNode>0</xbifns:colorExplanationNode>
+  </xbifns:staticProperty>
+  <xbifns:hierarchy>
+    <xbifns:root name="root">
+      <xbifns:level name="C0"/>
+      <xbifns:level name="C1"/>
+      <xbifns:level name="C2"/>
+    </xbifns:root>
+  </xbifns:hierarchy>
+  <xbifns:network>
+    <xbifns:variables>
+      <xbifns:variable rgbColor="-256" height="60.0" width="180.0" yPos="41" xPos="297" type="DiscreteProbabilistic" name="hasAggressiveBehavior">
+        <xbifns:description>C0</xbifns:description>
+        <xbifns:state name="True"/>
+        <xbifns:state name="False"/>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="154.0" yPos="113" xPos="83" type="DiscreteProbabilistic" name="hasWeaponVisible">
+        <xbifns:description>C1</xbifns:description>
+        <xbifns:state name="True"/>
+        <xbifns:state name="False"/>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="154.0" yPos="110" xPos="469" type="DiscreteProbabilistic" name="isJettisoningCargo">
+        <xbifns:description>C2</xbifns:description>
+        <xbifns:state name="True"/>
+        <xbifns:state name="False"/>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="129.0" yPos="183" xPos="215" type="ContinuousProbabilistic" name="speedChange">
+        <xbifns:description>GMM Node0</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="97.0" yPos="180" xPos="397" type="ContinuousProbabilistic" name="turnRate">
+        <xbifns:description>GMM Node1</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="157.0" yPos="279" xPos="123" type="ContinuousProbabilistic" name="propellerTurnCount">
+        <xbifns:description>GMM Node2</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="101.0" yPos="276" xPos="306" type="ContinuousProbabilistic" name="cavitation">
+        <xbifns:description>GMM Node3</xbifns:description>
+      </xbifns:variable>
+      <xbifns:variable rgbColor="-256" height="60.0" width="141.0" yPos="279" xPos="469" type="ContinuousProbabilistic" name="shipRCSchange">
+        <xbifns:description>GMM Node4</xbifns:description>
+      </xbifns:variable>
+    </xbifns:variables>
+    <xbifns:structure>
+      <xbifns:edge child="hasWeaponVisible" parent="hasAggressiveBehavior"/>
+      <xbifns:edge child="isJettisoningCargo" parent="hasAggressiveBehavior"/>
+      <xbifns:edge child="speedChange" parent="hasAggressiveBehavior"/>
+      <xbifns:edge child="turnRate" parent="hasAggressiveBehavior"/>
+      <xbifns:edge child="cavitation" parent="speedChange"/>
+      <xbifns:edge child="cavitation" parent="turnRate"/>
+      <xbifns:edge child="propellerTurnCount" parent="speedChange"/>
+      <xbifns:edge child="shipRCSchange" parent="turnRate"/>
+    </xbifns:structure>
+    <xbifns:conditionalDistributionSet>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="hasAggressiveBehavior"/>
+        <xbifns:CPT>
+          <xbifns:dependentParentIndex index="0">0.4000000059604645</xbifns:dependentParentIndex>
+          <xbifns:dependentParentIndex index="1">0.6000000238418579</xbifns:dependentParentIndex>
+        </xbifns:CPT>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="hasWeaponVisible"/>
+        <xbifns:parents>
+          <xbifns:parent index="0" name="hasAggressiveBehavior"/>
+        </xbifns:parents>
+        <xbifns:CPT>
+          <xbifns:dependentParentIndex index="0">0.699999988079071</xbifns:dependentParentIndex>
+          <xbifns:dependentParentIndex index="1">0.30000001192092896</xbifns:dependentParentIndex>
+          <xbifns:dependentParentIndex index="2">0.05000000074505806</xbifns:dependentParentIndex>
+          <xbifns:dependentParentIndex index="3">0.949999988079071</xbifns:dependentParentIndex>
+        </xbifns:CPT>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Discrete">
+        <xbifns:owner name="isJettisoningCargo"/>
+        <xbifns:parents>
+          <xbifns:parent index="0" name="hasAggressiveBehavior"/>
+        </xbifns:parents>
+        <xbifns:CPT>
+          <xbifns:dependentParentIndex index="0">0.25</xbifns:dependentParentIndex>
+          <xbifns:dependentParentIndex index="1">0.75</xbifns:dependentParentIndex>
+          <xbifns:dependentParentIndex index="2">0.019999999552965164</xbifns:dependentParentIndex>
+          <xbifns:dependentParentIndex index="3">0.9800000190734863</xbifns:dependentParentIndex>
+        </xbifns:CPT>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Continuous">
+        <xbifns:owner name="speedChange"/>
+        <xbifns:parents>
+          <xbifns:parent index="0" name="hasAggressiveBehavior"/>
+        </xbifns:parents>
+        <xbifns:CPS script="defineState( Continuous );p( speedChange | hasAggressiveBehavior ) = if( hasAggressiveBehavior == True ){ NormalDist(5,1); }  else if( hasAggressiveBehavior == False ){ NormalDist(8,1); } "/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Continuous">
+        <xbifns:owner name="turnRate"/>
+        <xbifns:parents>
+          <xbifns:parent index="0" name="hasAggressiveBehavior"/>
+        </xbifns:parents>
+        <xbifns:CPS script="defineState( Continuous );p( turnRate | hasAggressiveBehavior ) = if ( hasAggressiveBehavior == True ) {    NormalDist( 15, 3 ); } else if(hasAggressiveBehavior == False) {     NormalDist( 10, 3 ); }"/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Continuous">
+        <xbifns:owner name="propellerTurnCount"/>
+        <xbifns:parents>
+          <xbifns:parent index="0" name="speedChange"/>
+        </xbifns:parents>
+        <xbifns:CPS script="defineState( Continuous );p( propellerTurnCount | speedChange ) = 0.5*Exp(speedChange, e) + NormalDist( 0, 1 ); "/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Continuous">
+        <xbifns:owner name="cavitation"/>
+        <xbifns:parents>
+          <xbifns:parent index="0" name="speedChange"/>
+          <xbifns:parent index="1" name="turnRate"/>
+        </xbifns:parents>
+        <xbifns:CPS script="defineState( Continuous );p( cavitation | speedChange,turnRate ) =  Log( speedChange, e ) - 0.5* Log( turnRate, e ) +  NormalDist( 5, 3 );"/>
+      </xbifns:conditionalDistribution>
+      <xbifns:conditionalDistribution type="Continuous">
+        <xbifns:owner name="shipRCSchange"/>
+        <xbifns:parents>
+          <xbifns:parent index="0" name="turnRate"/>
+        </xbifns:parents>
+        <xbifns:CPS script="defineState( Continuous );p( shipRCSchange | turnRate ) =0.5*Exp(turnRate, e) + NormalDist( 0, 1 );"/>
+      </xbifns:conditionalDistribution>
+    </xbifns:conditionalDistributionSet>
+  </xbifns:network>
+</xbifns:XMLBIF>

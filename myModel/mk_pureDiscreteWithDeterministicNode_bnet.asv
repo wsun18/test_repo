@@ -1,0 +1,68 @@
+function bnet = mk_pureDiscreteWithDeterministicNode_bnet(CPD_type, p, arity)
+% mk_pureDiscreteWithDeterministicNode_bnet makes a simple artificial
+% network with deterministic nodes included. Main purpose is for testing
+% direct message passing method on discrete deterministic nodes.
+% The network is made up based on example Asia network.
+% Jan.12, 2012
+% -wsun
+
+
+if nargin == 0, CPD_type = 'orig'; end
+if nargin < 3, arity = 2; end
+
+Smoking = 1;
+LungCancer = 2;
+VisitToAsia = 3;
+TB = 4;
+TC_combo = 5;
+Xray = 6;
+
+n = 6;
+dag = zeros(n);
+dag(Smoking, LungCancer) = 1;
+dag(LungCancer, TC_combo) = 1;
+dag(VisitToAsia, TB) = 1;
+dag(TB, TC_combo) = 1;
+dag(TBorCancer, Xray) = 1;
+
+ns = arity*ones(1,n);
+if strcmp(CPD_type, 'gauss')
+  dnodes = [];
+else
+  dnodes = 1:n;
+end
+ns(dnodes) = 2; 
+ns(TC_combo) = 4 ;
+bnet = mk_bnet(dag, ns, 'discrete', dnodes, 'names', {'Smoking',...
+    'LungCancer','VisitToAsia', 'TB', 'TC_combo', 'Xray'});
+
+switch CPD_type
+  case 'orig', 
+    % visit is 1, no visit is 2
+    bnet.CPD{VisitToAsia} = tabular_CPD(bnet, VisitToAsia, [0.01   0.99]);
+    % smoker is 1, non-smoker is 2
+    bnet.CPD{Smoking} = tabular_CPD(bnet, Smoking, [0.5 0.5]);
+    % present is 1, absent is 2 
+    bnet.CPD{TB} = tabular_CPD(bnet, TB, [0.05 0.01 0.95 0.99]);    
+    % present is 1, absent is 2 
+    bnet.CPD{LungCancer} = tabular_CPD(bnet, LungCancer, [.1 .01 .90 0.99]);        
+    % c1t1, c2t1, c1t2, c2t2
+    bnet.CPD{TC_combo} = tabular_CPD(bnet, TC_combo, [1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1]);
+    % abnormal is 1, normal is 2 
+    bnet.CPD{Xray} = tabular_CPD(bnet, Xray, [0.98 0.05  0.02 0.95]);
+ case 'bool',
+  for i=1:n
+    bnet.CPD{i} = boolean_CPD(bnet, i, 'rnd');
+  end
+ case 'gauss',
+  for i=1:n
+    bnet.CPD{i} = gaussian_CPD(bnet, i, 'cov', 1*eye(ns(i)));
+  end
+ case 'cpt',
+  for i=1:n
+    bnet.CPD{i} = tabular_CPD(bnet, i, p);
+  end
+end
+
+  
+  

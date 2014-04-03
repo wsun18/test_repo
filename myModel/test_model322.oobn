@@ -1,0 +1,166 @@
+class test_model322
+{
+    inputs = ();
+    outputs = ();
+    node_size = (80 40);
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "100";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_Function = "4";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Mean_Variance = "1";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "javax.swing.plaf.FontUIResource[family=Tahoma,name=Tahoma,style=plain,size=13]";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+
+    node C8
+    {
+	label = "";
+	position = (721 457);
+	states = ("State 1" "State 2");
+    }
+
+    node C7
+    {
+	label = "";
+	position = (443 461);
+	states = ("State 1" "State 2");
+    }
+
+    node C6
+    {
+	label = "";
+	position = (645 313);
+	states = ("State 1" "State 2");
+	HR_LinkMode = "[C7:0][C8:0]";
+    }
+
+    node C5
+    {
+	label = "";
+	position = (395 315);
+	states = ("State 1" "State 2");
+	HR_LinkMode = "[C7:0]";
+    }
+
+    node C4
+    {
+	label = "";
+	position = (600 155);
+	states = ("State 1" "State 2");
+	HR_LinkMode = "[C5:0]";
+    }
+
+    node C3
+    {
+	label = "";
+	position = (459 154);
+	states = ("State 1" "State 2");
+	HR_LinkMode = "[C5:0]";
+    }
+
+    node C2
+    {
+	label = "";
+	position = (313 135);
+	states = ("State 1" "State 2");
+	HR_LinkMode = "[C5:0]";
+    }
+
+    node C1
+    {
+	label = "";
+	position = (193 177);
+	states = ("State 1" "State 2");
+	HR_LinkMode = "[C5:0]";
+    }
+
+    potential (C8 | C6)
+    {
+	data = (( 1 1 )	%  C6=State 1
+		( 1 1 ));	%  C6=State 2
+    }
+
+    potential (C7 | C6 C5)
+    {
+	data = ((( 1 1 )	%  C6=State 1  C5=State 1
+		 ( 1 1 ))	%  C6=State 1  C5=State 2
+		(( 1 1 )	%  C6=State 2  C5=State 1
+		 ( 1 1 )));	%  C6=State 2  C5=State 2
+    }
+
+    potential (C6)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (C5 | C4 C3 C2 C1)
+    {
+	data = ((((( 1 1 )	%  C4=State 1  C3=State 1  C2=State 1  C1=State 1
+		   ( 1 1 ))	%  C4=State 1  C3=State 1  C2=State 1  C1=State 2
+		  (( 1 1 )	%  C4=State 1  C3=State 1  C2=State 2  C1=State 1
+		   ( 1 1 )))	%  C4=State 1  C3=State 1  C2=State 2  C1=State 2
+		 ((( 1 1 )	%  C4=State 1  C3=State 2  C2=State 1  C1=State 1
+		   ( 1 1 ))	%  C4=State 1  C3=State 2  C2=State 1  C1=State 2
+		  (( 1 1 )	%  C4=State 1  C3=State 2  C2=State 2  C1=State 1
+		   ( 1 1 ))))	%  C4=State 1  C3=State 2  C2=State 2  C1=State 2
+		(((( 1 1 )	%  C4=State 2  C3=State 1  C2=State 1  C1=State 1
+		   ( 1 1 ))	%  C4=State 2  C3=State 1  C2=State 1  C1=State 2
+		  (( 1 1 )	%  C4=State 2  C3=State 1  C2=State 2  C1=State 1
+		   ( 1 1 )))	%  C4=State 2  C3=State 1  C2=State 2  C1=State 2
+		 ((( 1 1 )	%  C4=State 2  C3=State 2  C2=State 1  C1=State 1
+		   ( 1 1 ))	%  C4=State 2  C3=State 2  C2=State 1  C1=State 2
+		  (( 1 1 )	%  C4=State 2  C3=State 2  C2=State 2  C1=State 1
+		   ( 1 1 )))));	%  C4=State 2  C3=State 2  C2=State 2  C1=State 2
+    }
+
+    potential (C4)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (C3)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (C2)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (C1)
+    {
+	data = ( 1 1 );
+    }
+} % class test_model322

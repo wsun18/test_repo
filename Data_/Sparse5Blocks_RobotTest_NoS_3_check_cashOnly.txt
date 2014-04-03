@@ -1,0 +1,393 @@
+***Settings***
+Resource	engine_tests/daggre_lib.txt
+
+Test Setup	Start Daggre
+Test Teardown	Teardown Daggre
+
+***Test Cases***
+[T66_11-Q] Y3 test on two FFBs (fully filled block) connected cliques. Cash only comparison 
+	Add Category	Cat1
+	Comment	Iteration 1
+	Comment	Add 11 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	Register Test User	u1
+	${states}=	CreateList	S1	S2	S3
+	${qA}=	Add Question	Cat1	A	A	choices=${states}
+	${states}=	CreateList	S1	S2	S3
+	${qB}=	Add Question	Cat1	B	B	choices=${states}
+	${states}=	CreateList	S1	S2	S3
+	${qC}=	Add Question	Cat1	C	C	choices=${states}
+	${states}=	CreateList	S1	S2	S3
+	${qD}=	Add Question	Cat1	D	D	choices=${states}
+	${states}=	CreateList	S1	S2	S3
+	${qE}=	Add Question	Cat1	E	E	choices=${states}
+	${states}=	CreateList	S1	S2	S3
+	${qF}=	Add Question	Cat1	F	F	choices=${states}
+	${states}=	CreateList	S1	S2	S3
+	${qG}=	Add Question	Cat1	G	G	choices=${states}
+	${states}=	CreateList	S1	S2	S3
+	${qK}=	Add Question	Cat1	K	K	choices=${states}
+	${states}=	CreateList	S1	S2	S3
+	${qW}=	Add Question	Cat1	W	W	choices=${states}
+	${states}=	CreateList	S1	S2	S3
+	${qS}=	Add Question	Cat1	S	S	choices=${states}
+	${states}=	CreateList	S1	S2	S3
+	${qH}=	Add Question	Cat1	H	H	choices=${states}
+	Add Question Dependency	${qE}	${qA}
+	Add Question Dependency	${qE}	${qB}
+	Add Question Dependency	${qE}	${qC}
+	Add Question Dependency	${qE}	${qD}
+	Add Question Dependency	${qG}	${qD}
+	Add Question Dependency	${qK}	${qE}
+	Add Question Dependency	${qG}	${qF}
+	Add Question Dependency	${qH}	${qG}
+	Add Question Dependency	${qW}	${qK}
+	Add Question Dependency	${qH}	${qS}
+	${pDist}=	CreateList	28.967900	35.516000	35.516100
+	Do Multi Trade	u1	${qW}	${pDist}	${qK}:0
+
+
+	Comment	Iteration 2
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	49.942000	25.029000	25.029000
+	Do Multi Trade	u1	${qK}	${pDist}	${qE}:0
+
+
+	Comment	Iteration 3
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	78.300500	10.849800	10.849700
+	Do Multi Trade	u1	${qG}	${pDist}	${qD}:0,${qF}:0
+
+
+	Comment	Iteration 4
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	67.661500	16.169300	16.169200
+	Do Multi Trade	u1	${qG}	${pDist}	${qD}:1,${qF}:0
+
+
+	Comment	Iteration 5
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	15.005000	42.497500	42.497500
+	Do Multi Trade	u1	${qG}	${pDist}	${qD}:2,${qF}:0
+
+
+	Comment	Iteration 6
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	69.614700	15.192700	15.192600
+	Do Multi Trade	u1	${qG}	${pDist}	${qD}:0,${qF}:1
+
+
+	Comment	Iteration 7
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	12.960300	43.519800	43.519900
+	Do Multi Trade	u1	${qH}	${pDist}	${qG}:0,${qS}:0
+
+
+	Comment	Iteration 8
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	94.349800	2.825100	2.825100
+	Do Multi Trade	u1	${qH}	${pDist}	${qG}:1,${qS}:0
+
+
+	Comment	Iteration 9
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	88.420200	5.789900	5.789900
+	Do Multi Trade	u1	${qH}	${pDist}	${qG}:2,${qS}:0
+
+
+	Comment	Iteration 10
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	51.448000	24.276000	24.276000
+	Do Multi Trade	u1	${qH}	${pDist}	${qG}:0,${qS}:1
+
+
+	Comment	Iteration 11
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	66.599700	16.700200	16.700100
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:0,${qC}:0,${qD}:0
+
+
+	Comment	Iteration 12
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	95.063200	2.468400	2.468400
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:0,${qC}:0,${qD}:0
+
+
+	Comment	Iteration 13
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	13.579700	43.210200	43.210100
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:0,${qC}:0,${qD}:0
+
+
+	Comment	Iteration 14
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	73.570800	13.214600	13.214600
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:1,${qC}:0,${qD}:0
+
+
+	Comment	Iteration 15
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	80.731000	9.634500	9.634500
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:1,${qC}:0,${qD}:0
+
+
+	Comment	Iteration 16
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	76.364400	11.817800	11.817800
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:1,${qC}:0,${qD}:0
+
+
+	Comment	Iteration 17
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	19.841400	40.079300	40.079300
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:2,${qC}:0,${qD}:0
+
+
+	Comment	Iteration 18
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	42.598000	28.701000	28.701000
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:2,${qC}:0,${qD}:0
+
+
+	Comment	Iteration 19
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	2.955200	48.522400	48.522400
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:2,${qC}:0,${qD}:0
+
+
+	Comment	Iteration 20
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	32.705500	33.647300	33.647200
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:0,${qC}:1,${qD}:0
+
+
+	Comment	Iteration 21
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	14.464200	42.767900	42.767900
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:0,${qC}:1,${qD}:0
+
+
+	Comment	Iteration 22
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	44.691800	27.654100	27.654100
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:0,${qC}:1,${qD}:0
+
+
+	Comment	Iteration 23
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	56.345600	21.827200	21.827200
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:1,${qC}:1,${qD}:0
+
+
+	Comment	Iteration 24
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	77.378300	11.310900	11.310800
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:1,${qC}:1,${qD}:0
+
+
+	Comment	Iteration 25
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	41.745700	29.127100	29.127200
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:1,${qC}:1,${qD}:0
+
+
+	Comment	Iteration 26
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	52.542100	23.729000	23.728900
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:2,${qC}:1,${qD}:0
+
+
+	Comment	Iteration 27
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	90.173300	4.913400	4.913300
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:2,${qC}:1,${qD}:0
+
+
+	Comment	Iteration 28
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	87.625200	6.187400	6.187400
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:2,${qC}:1,${qD}:0
+
+
+	Comment	Iteration 29
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	53.719100	23.140400	23.140500
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:0,${qC}:2,${qD}:0
+
+
+	Comment	Iteration 30
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	87.820600	6.089700	6.089700
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:0,${qC}:2,${qD}:0
+
+
+	Comment	Iteration 31
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	6.532000	46.734000	46.734000
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:0,${qC}:2,${qD}:0
+
+
+	Comment	Iteration 32
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	78.965200	10.517400	10.517400
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:1,${qC}:2,${qD}:0
+
+
+	Comment	Iteration 33
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	33.626200	33.186900	33.186900
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:1,${qC}:2,${qD}:0
+
+
+	Comment	Iteration 34
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	23.459400	38.270300	38.270300
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:1,${qC}:2,${qD}:0
+
+
+	Comment	Iteration 35
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	80.285900	9.857100	9.857000
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:2,${qC}:2,${qD}:0
+
+
+	Comment	Iteration 36
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	34.902000	32.549000	32.549000
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:2,${qC}:2,${qD}:0
+
+
+	Comment	Iteration 37
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	17.409200	41.295400	41.295400
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:2,${qC}:2,${qD}:0
+
+
+	Comment	Iteration 38
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	3.786900	48.106600	48.106500
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:0,${qC}:0,${qD}:1
+
+
+	Comment	Iteration 39
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	93.843100	3.078400	3.078500
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:0,${qC}:0,${qD}:1
+
+
+	Comment	Iteration 40
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	67.126600	16.436700	16.436700
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:0,${qC}:0,${qD}:1
+
+
+	Comment	Iteration 41
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	84.635100	7.682500	7.682400
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:1,${qC}:0,${qD}:1
+
+
+	Comment	Iteration 42
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	92.262300	3.868900	3.868800
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:1,${qC}:0,${qD}:1
+
+
+	Comment	Iteration 43
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	67.117200	16.441400	16.441400
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:1,${qC}:0,${qD}:1
+
+
+	Comment	Iteration 44
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	90.157700	4.921200	4.921100
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:2,${qC}:0,${qD}:1
+
+
+	Comment	Iteration 45
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	25.985200	37.007400	37.007400
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:2,${qC}:0,${qD}:1
+
+
+	Comment	Iteration 46
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	87.068600	6.465700	6.465700
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:2,${qC}:0,${qD}:1
+
+
+	Comment	Iteration 47
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	90.412100	4.794000	4.793900
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:0,${qC}:1,${qD}:1
+
+
+	Comment	Iteration 48
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	30.197600	34.901200	34.901200
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:1,${qB}:0,${qC}:1,${qD}:1
+
+
+	Comment	Iteration 49
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	8.182500	45.908800	45.908700
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:2,${qB}:0,${qC}:1,${qD}:1
+
+
+	Comment	Iteration 50
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	75.586800	12.206600	12.206600
+	Do Multi Trade	u1	${qE}	${pDist}	${qA}:0,${qB}:1,${qC}:1,${qD}:1
+
+
+	Verify User Cash Leq	u1	None	86.228312

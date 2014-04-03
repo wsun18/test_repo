@@ -1,0 +1,138 @@
+Tue Apr 17 15:47:44 2012
+
+
+Moral links:
+
+    Marrying X and Y
+    Marrying B and X
+    Marrying B and Y
+    Marrying A and B
+    Marrying A and X
+    Marrying A and Y
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 2 members:
+    U, X
+This component is a clique of cost 6
+
+Triangulating prime component with 2 members:
+    E, W
+This component is a clique of cost 6
+
+Triangulating prime component with 2 members:
+    Z, A
+This component is a clique of cost 6
+
+Triangulating prime component with 2 members:
+    C, A
+This component is a clique of cost 4
+
+Triangulating prime component with 5 members:
+    W, Y, X, B, A
+This component is a clique of cost 40
+
+
+Total cost of triangulation for all prime components is 62
+
+
+Elimination sequence:
+
+    Z
+    E
+    U
+    Y
+    X
+    W
+    B
+    C
+    A
+
+
+Cliques:
+
+Clique 5, 2 members, table size = 4:
+    A, C
+
+Clique 4, 5 members, table size = 4 + 36:
+    A, B, W, X, Y
+
+Clique 3, 2 members, table size = 1 + 5:
+    X, U
+
+Clique 2, 2 members, table size = 1 + 5:
+    W, E
+
+Clique 1, 2 members, table size = 2 + 4:
+    A, Z
+
+Total clique table size: 12 + 50
+
+
+The junction forest:
+
+Creating junction tree with clique 5 as root ...
+
+Cliques 4 and 5 linked, separator has 1 member and table size = 2:
+    A
+
+Cliques 3 and 4 linked, separator has 1 member and table size = 1 + 2:
+    X
+
+Cliques 2 and 4 linked, separator has 1 member and table size = 1 + 2:
+    W
+
+Cliques 1 and 4 linked, separator has 1 member and table size = 2:
+    A
+
+
+Assignment of potentials to cliques:
+
+    Node E assigned to clique 2
+    Node U assigned to clique 3
+    Node W assigned to clique 4
+    Node Z assigned to clique 1
+    Node C assigned to clique 5
+    Node Y assigned to clique 4
+    Node X assigned to clique 3
+    Node B assigned to clique 4
+    Node A assigned to clique 1
+
+
+Checking conditional probability potentials:
+
+
+Beliefs for chance nodes:
+
+    E:
+	Mean: 0   Variance: 1   SD: 1
+
+    U:
+	Mean: 0   Variance: 1   SD: 1
+
+    W:
+	Mean: 0   Variance: 1   SD: 1
+
+    Z:
+	Mean: 0   Variance: 1   SD: 1
+
+    C:
+	State 1    0.5
+	State 2    0.5
+
+    Y:
+	Mean: 0   Variance: 1   SD: 1
+
+    X:
+	Mean: 0   Variance: 1   SD: 1
+
+    B:
+	State 1    0.5
+	State 2    0.5
+
+    A:
+	State 1    0.5
+	State 2    0.5

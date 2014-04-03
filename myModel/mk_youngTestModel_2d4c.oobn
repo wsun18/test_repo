@@ -1,0 +1,135 @@
+class mk_youngTestModel_2d4c
+{
+    inputs = ();
+    outputs = ();
+    node_size = (80 40);
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "100";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_Function = "4";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Mean_Variance = "1";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "javax.swing.plaf.FontUIResource[family=Tahoma,name=Tahoma,style=plain,size=13]";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+
+    continuous node L
+    {
+	label = "";
+	position = (438 269);
+	HR_Group = "0";
+	HR_Desc = "";
+    }
+
+    continuous node Z
+    {
+	label = "";
+	position = (271 382);
+	HR_Group = "0";
+	HR_Desc = "";
+    }
+
+    continuous node W
+    {
+	label = "";
+	position = (271 269);
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_LinkMode = "[C5:0]";
+    }
+
+    continuous node Y
+    {
+	label = "";
+	position = (364 175);
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_LinkMode = "[C4:0][C6:0]";
+    }
+
+    node K
+    {
+	label = "";
+	position = (363 74);
+	states = ("k1" "k2");
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[C3:0]";
+    }
+
+    node T
+    {
+	label = "";
+	position = (218 123);
+	states = ("t1" "t2");
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+	HR_LinkMode = "[C4:0]";
+    }
+
+    potential (L | Y)
+    {
+	data = normal ( 0.5 * Y, 1 );
+    }
+
+    potential (Z | W)
+    {
+	data = normal ( 5 + 0.5 * W, 1 );
+    }
+
+    potential (W | T Y)
+    {
+	data = ( normal ( 2 + Y, 1 )	%  T=t1
+		 normal ( 1 + Y, 1 ) );	%  T=t2
+    }
+
+    potential (Y | K)
+    {
+	data = ( normal ( 3, 1 )	%  K=k1
+		 normal ( 4, 1 ) );	%  K=k2
+    }
+
+    potential (K)
+    {
+	data = ( 0.8 0.2 );
+    }
+
+    potential (T)
+    {
+	data = ( 0.3 0.7 );
+    }
+} % class mk_youngTestModel_2d4c

@@ -1,0 +1,62 @@
+function bnet = mk_ClqSplitSample_bnet(CPD_type, p, arity)
+
+if nargin == 0, CPD_type = 'orig'; end
+if nargin < 3, arity = 2; end
+
+A=1; B=2; C=3; D=4; E=5; 
+
+n = 5;
+dag = zeros(n);
+dag(A, [B C]) = 1;
+dag(B, D) = 1;
+dag([C D], E) = 1;
+
+ns = arity*ones(1,n);
+if strcmp(CPD_type, 'gauss')
+  dnodes = [];
+else
+  dnodes = 1:n;
+end
+bnet = mk_bnet(dag, ns, 'discrete', dnodes, 'names', {'A','B',...
+    'C','D', 'E'});
+
+bnet.CPD{A} = tabular_CPD(bnet, A, [0.5 0.5]);
+bnet.CPD{B} = tabular_CPD(bnet, B, [0.5 0.5]);
+bnet.CPD{C} = tabular_CPD(bnet, C, [0.5 0.5]);
+bnet.CPD{D} = tabular_CPD(bnet, D, [0.5 0.5]);
+bnet.CPD{E} = tabular_CPD(bnet, E, [0.5 0.5]);
+
+switch CPD_type
+  case 'orig', 
+    % visit is 1, no visit is 2
+    bnet.CPD{VisitToAsia} = tabular_CPD(bnet, VisitToAsia, [0.01   0.99]);
+    % smoker is 1, non-smoker is 2
+    bnet.CPD{Smoking} = tabular_CPD(bnet, Smoking, [0.5 0.5]);
+    % present is 1, absent is 2 
+    bnet.CPD{TB} = tabular_CPD(bnet, TB, [0.05 0.01 0.95 0.99]);    
+    % present is 1, absent is 2 
+    bnet.CPD{LungCancer} = tabular_CPD(bnet, LungCancer, [.1 .01 .90 0.99]);    
+    % present 1, absent is 2
+    bnet.CPD{Bronchitis} = tabular_CPD(bnet, Bronchitis, [.6 .3 .4 .7]);
+    % true is 1, false is 2
+    bnet.CPD{TBorCancer} = tabular_CPD(bnet, TBorCancer, [1 1 1 0 0 0 0 1]);
+    % abnormal is 1, normal is 2 
+    bnet.CPD{Xray} = tabular_CPD(bnet, Xray, [0.98 0.05  0.02 0.95]);
+    % present 1, absent is 2 
+    bnet.CPD{Dys} = tabular_CPD(bnet, Dys, [0.9 0.7 0.8 0.1   0.1 0.3 0.2 0.9]);   
+ case 'bool',
+  for i=1:n
+    bnet.CPD{i} = boolean_CPD(bnet, i, 'rnd');
+  end
+ case 'gauss',
+  for i=1:n
+    bnet.CPD{i} = gaussian_CPD(bnet, i, 'cov', 1*eye(ns(i)));
+  end
+ case 'cpt',
+  for i=1:n
+    bnet.CPD{i} = tabular_CPD(bnet, i, p);
+  end
+end
+
+  
+  

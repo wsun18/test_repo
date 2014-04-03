@@ -1,0 +1,4264 @@
+====================================
+Prob. and Asset Updating using BN for Prediction Market
+**** Cross test auto comparison starts, hold on!
+********* Iteration 1 passed!
+model = 
+    node_names: {'N1'}
+         sizes: 2
+AddQ = 
+    'N1'
+ResQ = 
+     {}
+Elapsed time is 0.270000 seconds.
+********* Iteration 2 passed!
+model = 
+    node_names: {'N1'  'N14'}
+         sizes: [2 2]
+AddQ = 
+    'N1'    'N14'
+ResQ = 
+     {}
+Elapsed time is 0.040000 seconds.
+********* Iteration 3 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'}
+         sizes: [2 2 4]
+AddQ = 
+    'N1'    'N14'    'N7'
+ResQ = 
+     {}
+Elapsed time is 0.010000 seconds.
+********* Iteration 4 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'}
+         sizes: [2 2 4 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'
+ResQ = 
+     {}
+Elapsed time is 0.021000 seconds.
+********* Iteration 5 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'}
+         sizes: [2 2 4 3 4]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'
+ResQ = 
+     {}
+Elapsed time is 0.140000 seconds.
+********* Iteration 6 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'}
+         sizes: [2 2 4 3 4 2]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'
+ResQ = 
+     {}
+Elapsed time is 0.180000 seconds.
+********* Iteration 7 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'}
+         sizes: [2 2 4 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'
+ResQ = 
+     {}
+Elapsed time is 0.451000 seconds.
+********* Iteration 8 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'}
+         sizes: [2 2 4 3 4 2 3 4]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'
+ResQ = 
+     {}
+Elapsed time is 2.013000 seconds.
+********* Iteration 9 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'}
+         sizes: [2 2 4 3 4 2 3 4 2]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'
+ResQ = 
+     {}
+Elapsed time is 6.128000 seconds.
+********* Iteration 10 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 42.121000 seconds.
+********* Iteration 11 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 23.163000 seconds.
+********* Iteration 12 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 23.154000 seconds.
+********* Iteration 13 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 23.383000 seconds.
+********* Iteration 14 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 23.033000 seconds.
+********* Iteration 15 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 23.674000 seconds.
+********* Iteration 16 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 23.344000 seconds.
+********* Iteration 17 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 23.614000 seconds.
+********* Iteration 18 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 23.143000 seconds.
+********* Iteration 19 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 23.023000 seconds.
+********* Iteration 20 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 23.584000 seconds.
+********* Iteration 21 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 31.776000 seconds.
+********* Iteration 22 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 54.138000 seconds.
+********* Iteration 23 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 77.171000 seconds.
+********* Iteration 24 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 71.062000 seconds.
+********* Iteration 25 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 62.610000 seconds.
+********* Iteration 26 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 62.620000 seconds.
+********* Iteration 27 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 62.720000 seconds.
+********* Iteration 28 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 64.643000 seconds.
+********* Iteration 29 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 64.703000 seconds.
+********* Iteration 30 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 62.550000 seconds.
+********* Iteration 31 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 62.691000 seconds.
+********* Iteration 32 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 65.093000 seconds.
+********* Iteration 33 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 62.911000 seconds.
+********* Iteration 34 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 63.090000 seconds.
+********* Iteration 35 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 63.331000 seconds.
+********* Iteration 36 passed!
+model = 
+    node_names: {'N1'  'N14'  'N7'  'N35'  'N0'  'N20'  'N28'  'N12'  'N22'  'N37'}
+         sizes: [2 2 4 3 4 2 3 4 2 3]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+     {}
+Elapsed time is 65.435000 seconds.
+********* Iteration 37 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'}
+         sizes: [4 2 4 2 2 2 3 3 4]
+AddQ = 
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+ResQ = 
+    'N35'
+Elapsed time is 73.886000 seconds.
+********* Iteration 38 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 158.327000 seconds.
+********* Iteration 39 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 87.937000 seconds.
+********* Iteration 40 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 87.285000 seconds.
+********* Iteration 41 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 84.001000 seconds.
+********* Iteration 42 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 85.423000 seconds.
+********* Iteration 43 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 85.443000 seconds.
+********* Iteration 44 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 74.127000 seconds.
+********* Iteration 45 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 83.790000 seconds.
+********* Iteration 46 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 82.429000 seconds.
+********* Iteration 47 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 83.059000 seconds.
+********* Iteration 48 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 79.695000 seconds.
+********* Iteration 49 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 80.425000 seconds.
+********* Iteration 50 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 82.199000 seconds.
+********* Iteration 51 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 82.078000 seconds.
+********* Iteration 52 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 73.866000 seconds.
+********* Iteration 53 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 82.048000 seconds.
+********* Iteration 54 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 79.985000 seconds.
+********* Iteration 55 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 82.378000 seconds.
+********* Iteration 56 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 81.978000 seconds.
+********* Iteration 57 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 87.206000 seconds.
+********* Iteration 58 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 81.897000 seconds.
+********* Iteration 59 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 77.672000 seconds.
+********* Iteration 60 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 83.650000 seconds.
+********* Iteration 61 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 82.950000 seconds.
+********* Iteration 62 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 78.312000 seconds.
+********* Iteration 63 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 81.588000 seconds.
+********* Iteration 64 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 80.405000 seconds.
+********* Iteration 65 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 83.180000 seconds.
+********* Iteration 66 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 85.363000 seconds.
+********* Iteration 67 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 80.586000 seconds.
+********* Iteration 68 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 80.806000 seconds.
+********* Iteration 69 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 87.085000 seconds.
+********* Iteration 70 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 83.330000 seconds.
+********* Iteration 71 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 86.264000 seconds.
+********* Iteration 72 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 80.946000 seconds.
+********* Iteration 73 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 83.931000 seconds.
+********* Iteration 74 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 80.716000 seconds.
+********* Iteration 75 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 86.104000 seconds.
+********* Iteration 76 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 86.564000 seconds.
+********* Iteration 77 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 80.266000 seconds.
+********* Iteration 78 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 81.307000 seconds.
+********* Iteration 79 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N14'  'N20'  'N22'  'N28'  'N37'  'N7'  'N6'}
+         sizes: [4 2 4 2 2 2 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'
+Elapsed time is 87.746000 seconds.
+********* Iteration 80 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'}
+         sizes: [4 2 4 2 2 3 3 3 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 109.317000 seconds.
+********* Iteration 81 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'}
+         sizes: [4 2 4 2 2 3 3 3 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Column 11
+    'N6'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 18.717000 seconds.
+********* Iteration 82 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 174.591000 seconds.
+********* Iteration 83 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 101.616000 seconds.
+********* Iteration 84 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.545000 seconds.
+********* Iteration 85 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.474000 seconds.
+********* Iteration 86 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.124000 seconds.
+********* Iteration 87 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.255000 seconds.
+********* Iteration 88 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.574000 seconds.
+********* Iteration 89 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.214000 seconds.
+********* Iteration 90 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 103.149000 seconds.
+********* Iteration 91 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 126.231000 seconds.
+********* Iteration 92 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.425000 seconds.
+********* Iteration 93 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 103.769000 seconds.
+********* Iteration 94 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.304000 seconds.
+********* Iteration 95 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 103.249000 seconds.
+********* Iteration 96 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 99.943000 seconds.
+********* Iteration 97 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.164000 seconds.
+********* Iteration 98 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.245000 seconds.
+********* Iteration 99 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.634000 seconds.
+********* Iteration 100 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.254000 seconds.
+********* Iteration 101 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.205000 seconds.
+********* Iteration 102 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.073000 seconds.
+********* Iteration 103 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.454000 seconds.
+********* Iteration 104 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.054000 seconds.
+********* Iteration 105 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.434000 seconds.
+********* Iteration 106 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.245000 seconds.
+********* Iteration 107 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.013000 seconds.
+********* Iteration 108 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 99.964000 seconds.
+********* Iteration 109 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.134000 seconds.
+********* Iteration 110 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 99.513000 seconds.
+********* Iteration 111 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.425000 seconds.
+********* Iteration 112 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.534000 seconds.
+********* Iteration 113 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.385000 seconds.
+********* Iteration 114 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.064000 seconds.
+********* Iteration 115 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.544000 seconds.
+********* Iteration 116 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.074000 seconds.
+********* Iteration 117 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.575000 seconds.
+********* Iteration 118 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.144000 seconds.
+********* Iteration 119 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.184000 seconds.
+********* Iteration 120 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 99.693000 seconds.
+********* Iteration 121 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N15'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'
+Elapsed time is 100.034000 seconds.
+********* Iteration 122 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'}
+         sizes: [4 2 4 2 2 3 3 3 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 12
+    'N6'    'N15'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 127.754000 seconds.
+********* Iteration 123 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 165.888000 seconds.
+********* Iteration 124 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 91.662000 seconds.
+********* Iteration 125 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 91.081000 seconds.
+********* Iteration 126 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 91.842000 seconds.
+********* Iteration 127 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 90.981000 seconds.
+********* Iteration 128 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 90.690000 seconds.
+********* Iteration 129 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 90.761000 seconds.
+********* Iteration 130 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 90.730000 seconds.
+********* Iteration 131 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 90.761000 seconds.
+********* Iteration 132 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 90.580000 seconds.
+********* Iteration 133 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 90.751000 seconds.
+********* Iteration 134 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N37'  'N6'  'N7'  'N3'}
+         sizes: [4 2 4 2 2 3 3 3 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'
+Elapsed time is 91.201000 seconds.
+********* Iteration 135 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'}
+         sizes: [4 2 4 2 2 3 2 3 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 13
+    'N6'    'N15'    'N3'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 103.629000 seconds.
+********* Iteration 136 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 245.413000 seconds.
+********* Iteration 137 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 108.526000 seconds.
+********* Iteration 138 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 109.207000 seconds.
+********* Iteration 139 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 109.147000 seconds.
+********* Iteration 140 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 108.456000 seconds.
+********* Iteration 141 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 147.973000 seconds.
+********* Iteration 142 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.533000 seconds.
+********* Iteration 143 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.875000 seconds.
+********* Iteration 144 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.315000 seconds.
+********* Iteration 145 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.485000 seconds.
+********* Iteration 146 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.514000 seconds.
+********* Iteration 147 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.545000 seconds.
+********* Iteration 148 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.495000 seconds.
+********* Iteration 149 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.444000 seconds.
+********* Iteration 150 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.495000 seconds.
+********* Iteration 151 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.904000 seconds.
+********* Iteration 152 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.495000 seconds.
+********* Iteration 153 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.434000 seconds.
+********* Iteration 154 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.305000 seconds.
+********* Iteration 155 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.515000 seconds.
+********* Iteration 156 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.405000 seconds.
+********* Iteration 157 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.734000 seconds.
+********* Iteration 158 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 175.122000 seconds.
+********* Iteration 159 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.444000 seconds.
+********* Iteration 160 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.323000 seconds.
+********* Iteration 161 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.365000 seconds.
+********* Iteration 162 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.804000 seconds.
+********* Iteration 163 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.445000 seconds.
+********* Iteration 164 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.463000 seconds.
+********* Iteration 165 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.385000 seconds.
+********* Iteration 166 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.654000 seconds.
+********* Iteration 167 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.654000 seconds.
+********* Iteration 168 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.624000 seconds.
+********* Iteration 169 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.784000 seconds.
+********* Iteration 170 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.315000 seconds.
+********* Iteration 171 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.155000 seconds.
+********* Iteration 172 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.233000 seconds.
+********* Iteration 173 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.444000 seconds.
+********* Iteration 174 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.434000 seconds.
+********* Iteration 175 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.445000 seconds.
+********* Iteration 176 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.453000 seconds.
+********* Iteration 177 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.374000 seconds.
+********* Iteration 178 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.363000 seconds.
+********* Iteration 179 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.414000 seconds.
+********* Iteration 180 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.295000 seconds.
+********* Iteration 181 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.505000 seconds.
+********* Iteration 182 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.604000 seconds.
+********* Iteration 183 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.545000 seconds.
+********* Iteration 184 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.364000 seconds.
+********* Iteration 185 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 173.780000 seconds.
+********* Iteration 186 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.463000 seconds.
+********* Iteration 187 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.424000 seconds.
+********* Iteration 188 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.394000 seconds.
+********* Iteration 189 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.854000 seconds.
+********* Iteration 190 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.415000 seconds.
+********* Iteration 191 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.255000 seconds.
+********* Iteration 192 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.275000 seconds.
+********* Iteration 193 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.423000 seconds.
+********* Iteration 194 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.354000 seconds.
+********* Iteration 195 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.844000 seconds.
+********* Iteration 196 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.494000 seconds.
+********* Iteration 197 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.754000 seconds.
+********* Iteration 198 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.385000 seconds.
+********* Iteration 199 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.245000 seconds.
+********* Iteration 200 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.283000 seconds.
+********* Iteration 201 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.394000 seconds.
+********* Iteration 202 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.403000 seconds.
+********* Iteration 203 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.445000 seconds.
+********* Iteration 204 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.685000 seconds.
+********* Iteration 205 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 175.172000 seconds.
+********* Iteration 206 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.584000 seconds.
+********* Iteration 207 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.473000 seconds.
+********* Iteration 208 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 175.052000 seconds.
+********* Iteration 209 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.544000 seconds.
+********* Iteration 210 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.444000 seconds.
+********* Iteration 211 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 173.780000 seconds.
+********* Iteration 212 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.373000 seconds.
+********* Iteration 213 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 169.634000 seconds.
+********* Iteration 214 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N22'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'
+Elapsed time is 170.485000 seconds.
+********* Iteration 215 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'}
+         sizes: [4 2 4 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 14
+    'N6'    'N15'    'N3'    'N8'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 225.665000 seconds.
+********* Iteration 216 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 289.947000 seconds.
+********* Iteration 217 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 159.128000 seconds.
+********* Iteration 218 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 163.255000 seconds.
+********* Iteration 219 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 170.936000 seconds.
+********* Iteration 220 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 170.085000 seconds.
+********* Iteration 221 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.918000 seconds.
+********* Iteration 222 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.799000 seconds.
+********* Iteration 223 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.838000 seconds.
+********* Iteration 224 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.839000 seconds.
+********* Iteration 225 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 171.266000 seconds.
+********* Iteration 226 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 170.175000 seconds.
+********* Iteration 227 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.808000 seconds.
+********* Iteration 228 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 271.561000 seconds.
+********* Iteration 229 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 170.204000 seconds.
+********* Iteration 230 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 170.205000 seconds.
+********* Iteration 231 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.658000 seconds.
+********* Iteration 232 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 166.910000 seconds.
+********* Iteration 233 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 167.091000 seconds.
+********* Iteration 234 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 170.675000 seconds.
+********* Iteration 235 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.879000 seconds.
+********* Iteration 236 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.898000 seconds.
+********* Iteration 237 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.809000 seconds.
+********* Iteration 238 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 166.008000 seconds.
+********* Iteration 239 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.628000 seconds.
+********* Iteration 240 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.889000 seconds.
+********* Iteration 241 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.508000 seconds.
+********* Iteration 242 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 166.900000 seconds.
+********* Iteration 243 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.768000 seconds.
+********* Iteration 244 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 166.860000 seconds.
+********* Iteration 245 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.799000 seconds.
+********* Iteration 246 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.818000 seconds.
+********* Iteration 247 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.679000 seconds.
+********* Iteration 248 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.908000 seconds.
+********* Iteration 249 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 170.936000 seconds.
+********* Iteration 250 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 167.110000 seconds.
+********* Iteration 251 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 167.000000 seconds.
+********* Iteration 252 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 170.095000 seconds.
+********* Iteration 253 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 170.145000 seconds.
+********* Iteration 254 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 170.955000 seconds.
+********* Iteration 255 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 166.279000 seconds.
+********* Iteration 256 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.628000 seconds.
+********* Iteration 257 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 166.910000 seconds.
+********* Iteration 258 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N20'  'N28'  'N3'  'N6'  'N7'  'N8'  'N18'}
+         sizes: [4 2 4 2 3 2 3 4 4 2]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'
+Elapsed time is 165.818000 seconds.
+********* Iteration 259 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'}
+         sizes: [4 2 4 2 2 3 2 3 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 15
+    'N6'    'N15'    'N3'    'N8'    'N18'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 179.448000 seconds.
+********* Iteration 260 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 314.573000 seconds.
+********* Iteration 261 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 163.885000 seconds.
+********* Iteration 262 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 158.939000 seconds.
+********* Iteration 263 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 163.485000 seconds.
+********* Iteration 264 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.249000 seconds.
+********* Iteration 265 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.149000 seconds.
+********* Iteration 266 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.569000 seconds.
+********* Iteration 267 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.099000 seconds.
+********* Iteration 268 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 160.110000 seconds.
+********* Iteration 269 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 160.401000 seconds.
+********* Iteration 270 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.239000 seconds.
+********* Iteration 271 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 164.477000 seconds.
+********* Iteration 272 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 164.466000 seconds.
+********* Iteration 273 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 160.070000 seconds.
+********* Iteration 274 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 160.451000 seconds.
+********* Iteration 275 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 160.601000 seconds.
+********* Iteration 276 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 164.607000 seconds.
+********* Iteration 277 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 163.525000 seconds.
+********* Iteration 278 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.049000 seconds.
+********* Iteration 279 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 163.865000 seconds.
+********* Iteration 280 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.349000 seconds.
+********* Iteration 281 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.179000 seconds.
+********* Iteration 282 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 160.391000 seconds.
+********* Iteration 283 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.249000 seconds.
+********* Iteration 284 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 163.715000 seconds.
+********* Iteration 285 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 163.676000 seconds.
+********* Iteration 286 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.539000 seconds.
+********* Iteration 287 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.169000 seconds.
+********* Iteration 288 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.199000 seconds.
+********* Iteration 289 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.209000 seconds.
+********* Iteration 290 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.499000 seconds.
+********* Iteration 291 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 158.849000 seconds.
+********* Iteration 292 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 160.430000 seconds.
+********* Iteration 293 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 164.637000 seconds.
+********* Iteration 294 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 163.736000 seconds.
+********* Iteration 295 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.499000 seconds.
+********* Iteration 296 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 164.587000 seconds.
+********* Iteration 297 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 163.415000 seconds.
+********* Iteration 298 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 163.825000 seconds.
+********* Iteration 299 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.019000 seconds.
+********* Iteration 300 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 160.511000 seconds.
+********* Iteration 301 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 162.303000 seconds.
+********* Iteration 302 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 161.142000 seconds.
+********* Iteration 303 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 160.891000 seconds.
+********* Iteration 304 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 169.544000 seconds.
+********* Iteration 305 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 160.901000 seconds.
+********* Iteration 306 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N18'  'N20'  'N28'  'N3'  'N6'  'N8'  'N17'}
+         sizes: [4 2 4 2 2 3 2 3 4 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'
+Elapsed time is 159.680000 seconds.
+********* Iteration 307 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'}
+         sizes: [4 2 4 4 2 3 2 3 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 16
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 217.162000 seconds.
+********* Iteration 308 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 714.788000 seconds.
+********* Iteration 309 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 364.745000 seconds.
+********* Iteration 310 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 380.497000 seconds.
+********* Iteration 311 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 393.295000 seconds.
+********* Iteration 312 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 394.047000 seconds.
+********* Iteration 313 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 382.099000 seconds.
+********* Iteration 314 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 380.007000 seconds.
+********* Iteration 315 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 395.138000 seconds.
+********* Iteration 316 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 393.175000 seconds.
+********* Iteration 317 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 381.639000 seconds.
+********* Iteration 318 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 390.602000 seconds.
+********* Iteration 319 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 392.294000 seconds.
+********* Iteration 320 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 390.702000 seconds.
+********* Iteration 321 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 391.993000 seconds.
+********* Iteration 322 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 395.618000 seconds.
+********* Iteration 323 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 379.356000 seconds.
+********* Iteration 324 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 383.051000 seconds.
+********* Iteration 325 passed!
+model = 
+    node_names: {'N0'  'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [4 2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'
+Elapsed time is 379.946000 seconds.
+********* Iteration 326 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 411.972000 seconds.
+********* Iteration 327 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'}
+         sizes: [2 4 4 2 3 2 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 17
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 18.828000 seconds.
+********* Iteration 328 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 404.852000 seconds.
+********* Iteration 329 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 215.069000 seconds.
+********* Iteration 330 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 215.941000 seconds.
+********* Iteration 331 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 209.471000 seconds.
+********* Iteration 332 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 210.462000 seconds.
+********* Iteration 333 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 210.493000 seconds.
+********* Iteration 334 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 206.106000 seconds.
+********* Iteration 335 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 209.702000 seconds.
+********* Iteration 336 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 210.312000 seconds.
+********* Iteration 337 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 202.542000 seconds.
+********* Iteration 338 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 216.421000 seconds.
+********* Iteration 339 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 204.694000 seconds.
+********* Iteration 340 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 208.099000 seconds.
+********* Iteration 341 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 208.099000 seconds.
+********* Iteration 342 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 203.603000 seconds.
+********* Iteration 343 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 208.189000 seconds.
+********* Iteration 344 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 203.593000 seconds.
+********* Iteration 345 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 206.767000 seconds.
+********* Iteration 346 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 202.942000 seconds.
+********* Iteration 347 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 201.740000 seconds.
+********* Iteration 348 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 206.727000 seconds.
+********* Iteration 349 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 202.742000 seconds.
+********* Iteration 350 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 201.069000 seconds.
+********* Iteration 351 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 207.288000 seconds.
+********* Iteration 352 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 201.340000 seconds.
+********* Iteration 353 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 201.930000 seconds.
+********* Iteration 354 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 201.329000 seconds.
+********* Iteration 355 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 207.349000 seconds.
+********* Iteration 356 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 201.349000 seconds.
+********* Iteration 357 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 201.800000 seconds.
+********* Iteration 358 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N3'  'N6'  'N8'  'N9'  'N26'}
+         sizes: [2 4 4 2 3 2 3 4 3 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'
+Elapsed time is 202.221000 seconds.
+********* Iteration 359 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N26'  'N28'  'N6'  'N8'  'N9'}
+         sizes: [2 4 4 2 3 3 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 18
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'    'N3'
+Elapsed time is 283.298000 seconds.
+********* Iteration 360 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N26'  'N28'  'N6'  'N8'  'N9'  'N5'}
+         sizes: [2 4 4 2 3 3 3 4 3 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 19
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'    'N5'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'    'N3'
+Elapsed time is 1810.222000 seconds.
+********* Iteration 361 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N5'  'N6'  'N8'  'N9'}
+         sizes: [2 4 4 2 3 4 3 4 3]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 19
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'    'N5'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'    'N3'    'N26'
+Elapsed time is 1077.689000 seconds.
+********* Iteration 362 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N5'  'N6'  'N8'  'N9'  'N11'}
+         sizes: [2 4 4 2 3 4 3 4 3 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 20
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'    'N5'    'N11'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'    'N3'    'N26'
+Elapsed time is 3407.169000 seconds.
+********* Iteration 363 passed!
+model = 
+    node_names: {'N1'  'N12'  'N17'  'N20'  'N28'  'N5'  'N6'  'N8'  'N9'  'N11'}
+         sizes: [2 4 4 2 3 4 3 4 3 4]
+AddQ = 
+  Columns 1 through 10
+    'N1'    'N14'    'N7'    'N35'    'N0'    'N20'    'N28'    'N12'    'N22'    'N37'
+  Columns 11 through 20
+    'N6'    'N15'    'N3'    'N8'    'N18'    'N17'    'N9'    'N26'    'N5'    'N11'
+ResQ = 
+    'N35'    'N14'    'N15'    'N37'    'N22'    'N7'    'N18'    'N0'    'N3'    'N26'
+Elapsed time is 1779.479000 seconds.
+Error in ==> ..\markov_engine_lib\full_combination_new.m at 22
+        end
+
+Error in ==> ..\markov_engine_lib\bf_find_currProb.m at 25
+h_cc = full_combination_new(ns) ;
+
+Error in ==> ..\markov_engine_lib\bf_find_marg.m at 18
+    marg{i} = bf_find_currProb(model,jp,node_names(i)) ;
+
+Error in ==> cross_auto_comparison1 at 137
+        marg = bf_find_marg(model,jp_current) ;
+
+Error in ==> ME_CrossTest_disconnected at 68
+    [user jp ncc] = cross_auto_comparison1('121106-seed1352241922443.txt') ; 
+
+K>> 

@@ -1,0 +1,995 @@
+***Settings***
+Resource	engine_tests/daggre_lib.txt
+
+Test Setup	Start Daggre
+Test Teardown	Teardown Daggre
+
+***Test Cases***
+[T66_7-Q] Y3 test on two FFBs (fully filled block) connected cliques. 
+	Add Category	Cat1
+	Comment	Iteration 1
+	Comment	Add 7 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	Register Test User	u1
+	${qQ1}=	Add Question	Cat1	Q1	Q1binary question
+	${qQ2}=	Add Question	Cat1	Q2	Q2binary question
+	${qQ3}=	Add Question	Cat1	Q3	Q3binary question
+	${qQ4}=	Add Question	Cat1	Q4	Q4binary question
+	${qQ5}=	Add Question	Cat1	Q5	Q5binary question
+	${qQ6}=	Add Question	Cat1	Q6	Q6binary question
+	${qQ7}=	Add Question	Cat1	Q7	Q7binary question
+	Add Question Dependency	${qQ2}	${qQ1}
+	Add Question Dependency	${qQ3}	${qQ1}
+	Add Question Dependency	${qQ4}	${qQ1}
+	Add Question Dependency	${qQ5}	${qQ1}
+	Add Question Dependency	${qQ6}	${qQ1}
+	Add Question Dependency	${qQ7}	${qQ1}
+	Add Question Dependency	${qQ3}	${qQ2}
+	Add Question Dependency	${qQ4}	${qQ2}
+	Add Question Dependency	${qQ5}	${qQ2}
+	Add Question Dependency	${qQ6}	${qQ2}
+	Add Question Dependency	${qQ4}	${qQ3}
+	Add Question Dependency	${qQ5}	${qQ3}
+	Add Question Dependency	${qQ6}	${qQ3}
+	Add Question Dependency	${qQ7}	${qQ3}
+	Add Question Dependency	${qQ5}	${qQ4}
+	Add Question Dependency	${qQ6}	${qQ4}
+	Add Question Dependency	${qQ6}	${qQ5}
+	Add Question Dependency	${qQ7}	${qQ6}
+	${pDist}=	CreateList	91.022100	8.977900
+	Verify Trade Range	u1	${qQ7}	0	${qQ1}:0,${qQ3}:0,${qQ6}:0	0.048800	99.951200
+	Do Multi Trade	u1	${qQ7}	${pDist}	${qQ1}:0,${qQ3}:0,${qQ6}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		55.127762	44.872238
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1007.053354
+	Verify User Cash	u1	None	752.252184
+
+
+	Comment	Iteration 2
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	88.093900	11.906100
+	Verify Trade Range	u1	${qQ7}	0	${qQ1}:1,${qQ3}:0,${qQ6}:0	0.048800	99.951200
+	Do Multi Trade	u1	${qQ7}	${pDist}	${qQ1}:1,${qQ3}:0,${qQ6}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		59.889500	40.110500
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1012.970157
+	Verify User Cash	u1	None	752.252184
+
+
+	Comment	Iteration 3
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	16.807800	83.192200
+	Verify Trade Range	u1	${qQ7}	0	${qQ1}:0,${qQ3}:1,${qQ6}:0	0.048800	99.951200
+	Do Multi Trade	u1	${qQ7}	${pDist}	${qQ1}:0,${qQ3}:1,${qQ6}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		55.740475	44.259525
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1017.304043
+	Verify User Cash	u1	None	752.252184
+
+
+	Comment	Iteration 4
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	73.365300	26.634700
+	Verify Trade Range	u1	${qQ7}	0	${qQ1}:1,${qQ3}:1,${qQ6}:0	0.048800	99.951200
+	Do Multi Trade	u1	${qQ7}	${pDist}	${qQ1}:1,${qQ3}:1,${qQ6}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.661137	41.338863
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1019.351870
+	Verify User Cash	u1	None	752.252184
+
+
+	Comment	Iteration 5
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	19.260700	80.739300
+	Verify Trade Range	u1	${qQ7}	0	${qQ1}:0,${qQ3}:0,${qQ6}:1	0.048800	99.951200
+	Do Multi Trade	u1	${qQ7}	${pDist}	${qQ1}:0,${qQ3}:0,${qQ6}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		54.818725	45.181275
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1023.015703
+	Verify User Cash	u1	None	752.252184
+
+
+	Comment	Iteration 6
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	52.402300	47.597700
+	Verify Trade Range	u1	${qQ7}	0	${qQ1}:1,${qQ3}:0,${qQ6}:1	0.048800	99.951200
+	Do Multi Trade	u1	${qQ7}	${pDist}	${qQ1}:1,${qQ3}:0,${qQ6}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		55.119012	44.880987
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1023.036526
+	Verify User Cash	u1	None	752.252184
+
+
+	Comment	Iteration 7
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	45.681800	54.318200
+	Verify Trade Range	u1	${qQ7}	0	${qQ1}:0,${qQ3}:1,${qQ6}:1	0.048800	99.951200
+	Do Multi Trade	u1	${qQ7}	${pDist}	${qQ1}:0,${qQ3}:1,${qQ6}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		54.579237	45.420763
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1023.103864
+	Verify User Cash	u1	None	752.252184
+
+
+	Comment	Iteration 8
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	96.517400	3.482600
+	Verify Trade Range	u1	${qQ7}	0	${qQ1}:1,${qQ3}:1,${qQ6}:1	0.048800	99.951200
+	Do Multi Trade	u1	${qQ7}	${pDist}	${qQ1}:1,${qQ3}:1,${qQ6}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		60.393913	39.606087
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1032.878308
+	Verify User Cash	u1	None	615.630859
+
+
+	Comment	Iteration 9
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	58.255400	41.744600
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:0,${qQ3}:0,${qQ4}:0,${qQ5}:0	0.271900	99.873200
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:0,${qQ3}:0,${qQ4}:0,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.257981	49.742019
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		60.579043	39.420957
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1033.009997
+	Verify User Cash	u1	None	615.630859
+
+
+	Comment	Iteration 10
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	96.155400	3.844600
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:0,${qQ3}:0,${qQ4}:0,${qQ5}:0	0.205100	99.948700
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:0,${qQ3}:0,${qQ4}:0,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		51.700338	48.299663
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		61.093843	38.906157
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1036.080571
+	Verify User Cash	u1	None	615.630859
+
+
+	Comment	Iteration 11
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	68.019800	31.980200
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:1,${qQ3}:0,${qQ4}:0,${qQ5}:0	0.271900	99.873200
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:1,${qQ3}:0,${qQ4}:0,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		52.263456	47.736544
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		61.497945	38.502055
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1036.532749
+	Verify User Cash	u1	None	615.630859
+
+
+	Comment	Iteration 12
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	40.495200	59.504800
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:1,${qQ3}:0,${qQ4}:0,${qQ5}:0	0.205100	99.948700
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:1,${qQ3}:0,${qQ4}:0,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		51.966431	48.033569
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		61.391932	38.608068
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1036.474605
+	Verify User Cash	u1	None	615.630859
+
+
+	Comment	Iteration 13
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	12.661700	87.338300
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:0,${qQ3}:1,${qQ4}:0,${qQ5}:0	0.145300	99.946600
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:0,${qQ3}:1,${qQ4}:0,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.799609	49.200391
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		61.728841	38.271159
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1037.488570
+	Verify User Cash	u1	None	615.630859
+
+
+	Comment	Iteration 14
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	46.449000	53.551000
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:0,${qQ3}:1,${qQ4}:0,${qQ5}:0	0.091700	99.299000
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:0,${qQ3}:1,${qQ4}:0,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.688641	49.311359
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		61.754532	38.245468
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1037.568543
+	Verify User Cash	u1	None	615.630859
+
+
+	Comment	Iteration 15
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	95.102200	4.897800
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:1,${qQ3}:1,${qQ4}:0,${qQ5}:0	0.145300	99.946600
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:1,${qQ3}:1,${qQ4}:0,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		52.098084	47.901916
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		61.347569	38.652431
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1040.293246
+	Verify User Cash	u1	None	615.630859
+
+
+	Comment	Iteration 16
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	88.483700	11.516300
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:1,${qQ3}:1,${qQ4}:0,${qQ5}:0	0.091700	99.299000
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:1,${qQ3}:1,${qQ4}:0,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		53.300700	46.699300
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		61.069139	38.930861
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1041.064576
+	Verify User Cash	u1	None	403.805777
+
+
+	Comment	Iteration 17
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	27.894600	72.105400
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:0,${qQ3}:0,${qQ4}:1,${qQ5}:0	0.271900	99.873200
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:0,${qQ3}:0,${qQ4}:1,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		52.609906	47.390094
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		60.573415	39.426585
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1041.333475
+	Verify User Cash	u1	None	403.805777
+
+
+	Comment	Iteration 18
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	30.385900	69.614100
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:0,${qQ3}:0,${qQ4}:1,${qQ5}:0	0.205100	99.948700
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:0,${qQ3}:0,${qQ4}:1,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		51.996966	48.003034
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		60.354647	39.645353
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1041.400749
+	Verify User Cash	u1	None	403.805777
+
+
+	Comment	Iteration 19
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	19.702700	80.297300
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:1,${qQ3}:0,${qQ4}:1,${qQ5}:0	0.271900	99.873200
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:1,${qQ3}:0,${qQ4}:1,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		51.050175	48.949825
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		59.675217	40.324783
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1042.031696
+	Verify User Cash	u1	None	403.805777
+
+
+	Comment	Iteration 20
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	39.418600	60.581400
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:1,${qQ3}:0,${qQ4}:1,${qQ5}:0	0.205100	99.948700
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:1,${qQ3}:0,${qQ4}:1,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.719506	49.280494
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		59.557196	40.442804
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1041.977452
+	Verify User Cash	u1	None	403.805777
+
+
+	Comment	Iteration 21
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	96.554300	3.445700
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:0,${qQ3}:1,${qQ4}:1,${qQ5}:0	0.145300	99.946600
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:0,${qQ3}:1,${qQ4}:1,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		52.174328	47.825672
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		59.137131	40.862869
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1044.923164
+	Verify User Cash	u1	None	403.805777
+
+
+	Comment	Iteration 22
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	57.324500	42.675500
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:0,${qQ3}:1,${qQ4}:1,${qQ5}:0	0.091700	99.299000
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:0,${qQ3}:1,${qQ4}:1,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		52.403219	47.596781
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		59.084138	40.915862
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1044.830229
+	Verify User Cash	u1	None	403.805777
+
+
+	Comment	Iteration 23
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	1.479200	98.520800
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:1,${qQ3}:1,${qQ4}:1,${qQ5}:0	0.145300	99.946600
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:1,${qQ3}:1,${qQ4}:1,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.886944	49.113056
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		59.521947	40.478053
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1047.090492
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 24
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	91.397300	8.602700
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:1,${qQ3}:1,${qQ4}:1,${qQ5}:0	0.091700	99.299000
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:1,${qQ3}:1,${qQ4}:1,${qQ5}:0
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		52.180609	47.819391
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		59.222436	40.777564
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1048.093753
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 25
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	25.652400	74.347600
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:0,${qQ3}:0,${qQ4}:0,${qQ5}:1	0.271900	99.873200
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:0,${qQ3}:0,${qQ4}:0,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		51.419747	48.580253
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.676430	41.323570
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1048.445387
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 26
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	45.277200	54.722800
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:0,${qQ3}:0,${qQ4}:0,${qQ5}:1	0.205100	99.948700
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:0,${qQ3}:0,${qQ4}:0,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		51.272159	48.727841
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.623754	41.376246
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1048.395915
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 27
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	34.265300	65.734700
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:1,${qQ3}:0,${qQ4}:0,${qQ5}:1	0.271900	99.873200
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:1,${qQ3}:0,${qQ4}:0,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.780450	49.219550
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.270897	41.729103
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1048.489661
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 28
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	39.311300	60.688700
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:1,${qQ3}:0,${qQ4}:0,${qQ5}:1	0.205100	99.948700
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:1,${qQ3}:0,${qQ4}:0,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.446428	49.553572
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.151679	41.848321
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1048.435925
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 29
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	30.044700	69.955300
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:0,${qQ3}:1,${qQ4}:0,${qQ5}:1	0.145300	99.946600
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:0,${qQ3}:1,${qQ4}:0,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		49.822825	50.177175
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.331738	41.668262
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1048.592335
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 30
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	3.197500	96.802500
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:0,${qQ3}:1,${qQ4}:0,${qQ5}:1	0.091700	99.299000
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:0,${qQ3}:1,${qQ4}:0,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		48.360247	51.639753
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.670356	41.329644
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1051.983268
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 31
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	53.993800	46.006200
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:1,${qQ3}:1,${qQ4}:0,${qQ5}:1	0.145300	99.946600
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:1,${qQ3}:1,${qQ4}:0,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		48.485053	51.514947
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.634319	41.365681
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1052.040265
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 32
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	90.948900	9.051100
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:1,${qQ3}:1,${qQ4}:0,${qQ5}:1	0.091700	99.299000
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:1,${qQ3}:1,${qQ4}:0,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		49.764706	50.235294
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.338052	41.661948
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1053.004982
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 33
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	28.637200	71.362800
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:0,${qQ3}:0,${qQ4}:1,${qQ5}:1	0.271900	99.873200
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:0,${qQ3}:0,${qQ4}:1,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		49.097119	50.902881
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		57.858982	42.141018
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1053.248994
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 34
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	91.166000	8.834000
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:0,${qQ3}:0,${qQ4}:1,${qQ5}:1	0.205100	99.948700
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:0,${qQ3}:0,${qQ4}:1,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.383556	49.616444
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.318132	41.681868
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1055.634202
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 35
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	60.180600	39.819400
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:1,${qQ3}:0,${qQ4}:1,${qQ5}:1	0.271900	99.873200
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:1,${qQ3}:0,${qQ4}:1,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		50.701700	49.298300
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.546437	41.453563
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1055.814582
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 36
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	13.322400	86.677600
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:1,${qQ3}:0,${qQ4}:1,${qQ5}:1	0.205100	99.948700
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:1,${qQ3}:0,${qQ4}:1,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		49.555525	50.444475
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.137349	41.862651
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1056.629537
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 37
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	1.806300	98.193700
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:0,${qQ3}:1,${qQ4}:1,${qQ5}:1	0.145300	99.946600
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:0,${qQ3}:1,${qQ4}:1,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		48.049472	51.950528
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.572206	41.427794
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1058.832916
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 38
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	73.451300	26.548700
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:0,${qQ3}:1,${qQ4}:1,${qQ5}:1	0.091700	99.299000
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:0,${qQ3}:1,${qQ4}:1,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		48.782325	51.217675
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.402536	41.597464
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1058.895811
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 39
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	4.528000	95.472000
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:0,${qQ2}:1,${qQ3}:1,${qQ4}:1,${qQ5}:1	0.145300	99.946600
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:0,${qQ2}:1,${qQ3}:1,${qQ4}:1,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		47.361325	52.638675
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		58.812835	41.187165
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1060.704547
+	Verify User Cash	u1	None	334.816375
+
+
+	Comment	Iteration 40
+	Comment	Add 0 questions; user 1 obtains 0.000000 cash
+	Comment	Trade type 0; Resolution 0; Revert trade 0
+	${pDist}=	CreateList	22.844800	77.155200
+	Verify Trade Range	u1	${qQ6}	0	${qQ1}:1,${qQ2}:1,${qQ3}:1,${qQ4}:1,${qQ5}:1	0.091700	99.299000
+	Do Multi Trade	u1	${qQ6}	${pDist}	${qQ1}:1,${qQ2}:1,${qQ3}:1,${qQ4}:1,${qQ5}:1
+	${refQ1}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ1}	None	${refQ1}
+	${refQ2}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ2}	None	${refQ2}
+	${refQ3}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ3}	None	${refQ3}
+	${refQ4}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ4}	None	${refQ4}
+	${refQ5}=   CreateList		50.000000	50.000000
+	Verify Prob Question List	${qQ5}	None	${refQ5}
+	${refQ6}=   CreateList		46.512725	53.487275
+	Verify Prob Question List	${qQ6}	None	${refQ6}
+	${refQ7}=   CreateList		59.009304	40.990696
+	Verify Prob Question List	${qQ7}	None	${refQ7}
+	Compare Score	u1	1061.931292
+	Verify User Cash	u1	None	334.816375
+
+

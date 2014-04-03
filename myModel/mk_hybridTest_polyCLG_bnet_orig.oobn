@@ -1,0 +1,182 @@
+class mk_hybridTest_polyCLG_bnet_orig
+{
+    inputs = ();
+    outputs = ();
+    node_size = (80 40);
+    HR_Desc = "";
+    HR_OOBN_CheckConsistency = "1";
+    HR_OOBN_FitExpand = "1";
+    HR_Zoom_ZoomFactor = "100";
+    HR_Groups_GroupColors = "";
+    HR_Groups_GroupNames = "";
+    HR_Groups_UserGroupsNo = "0";
+    HR_Color_Interface = "21";
+    HR_Color_Instance = "0";
+    HR_Color_Function = "4";
+    HR_Color_Utility = "36";
+    HR_Color_Decision = "17";
+    HR_Color_ContinuousChance = "48";
+    HR_Color_DiscreteChance = "16";
+    HR_Monitor_InitSD = "2";
+    HR_Monitor_Utility_Arrange = "0";
+    HR_Monitor_Mean_Variance = "1";
+    HR_Monitor_Chance_Utility = "1";
+    HR_Monitor_InitStates = "5";
+    HR_Monitor_OpenGraph = "0";
+    HR_Monitor_GraphPrecision = "100";
+    HR_Monitor_AutoUpdGraph = "0";
+    HR_Compile_MaxMinimalSeparators = "100000";
+    HR_Compile_ApproxEpsilon = "1.0E-5";
+    HR_Compile_Approximate = "0";
+    HR_Compile_SaveToMemory = "0";
+    HR_Compile_Compress = "0";
+    HR_Compile_TriangMethod = "0";
+    HR_Propagate_AutoNormal = "1";
+    HR_Propagate_AutoSum = "1";
+    HR_Propagate_Auto = "1";
+    HR_Font_Italic = "0";
+    HR_Font_Weight = "400";
+    HR_Font_Size = "-12";
+    HR_Font_Name = "javax.swing.plaf.FontUIResource[family=Tahoma,name=Tahoma,style=plain,size=13]";
+    HR_Grid_GridShow = "0";
+    HR_Grid_GridSnap = "0";
+    HR_Grid_Y = "40";
+    HR_Grid_X = "40";
+
+    continuous node E
+    {
+	label = "";
+	position = (292 400);
+	HR_Group = "0";
+	HR_Desc = "";
+    }
+
+    continuous node U
+    {
+	label = "";
+	position = (333 58);
+	HR_LinkMode = "[X:0]";
+	HR_Group = "0";
+	HR_Desc = "";
+    }
+
+    continuous node W
+    {
+	label = "";
+	position = (293 297);
+	HR_LinkMode = "[E:0]";
+	HR_Group = "0";
+	HR_Desc = "";
+    }
+
+    continuous node Z
+    {
+	label = "";
+	position = (181 294);
+	HR_Group = "0";
+	HR_Desc = "";
+    }
+
+    node C
+    {
+	label = "";
+	position = (80 257);
+	states = ("State 1" "State 2");
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    continuous node Y
+    {
+	label = "";
+	position = (427 168);
+	HR_LinkMode = "[W:0]";
+	HR_Group = "0";
+	HR_Desc = "";
+    }
+
+    continuous node X
+    {
+	label = "";
+	position = (334 163);
+	HR_LinkMode = "[W:0]";
+	HR_Group = "0";
+	HR_Desc = "";
+    }
+
+    node B
+    {
+	label = "";
+	position = (243 162);
+	states = ("State 1" "State 2");
+	HR_LinkMode = "[W:0]";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    node A
+    {
+	label = "";
+	position = (152 158);
+	states = ("State 1" "State 2");
+	HR_LinkMode = "[C:0][Z:0][W:0]";
+	HR_Group = "0";
+	HR_Desc = "";
+	HR_State_1 = "";
+	HR_State_0 = "";
+    }
+
+    potential (E | W)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (U)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (W | B A X Y)
+    {
+	data = (( normal ( 0, 1 )	%  B=State 1  A=State 1
+		  normal ( 0, 1 ) )	%  B=State 1  A=State 2
+		( normal ( 0, 1 )	%  B=State 2  A=State 1
+		  normal ( 0, 1 ) ));	%  B=State 2  A=State 2
+    }
+
+    potential (Z | A)
+    {
+	data = ( normal ( 0, 1 )	%  A=State 1
+		 normal ( 0, 1 ) );	%  A=State 2
+    }
+
+    potential (C | A)
+    {
+	data = (( 1 1 )	%  A=State 1
+		( 1 1 ));	%  A=State 2
+    }
+
+    potential (Y)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (X | U)
+    {
+	data = normal ( 0, 1 );
+    }
+
+    potential (B)
+    {
+	data = ( 1 1 );
+    }
+
+    potential (A)
+    {
+	data = ( 1 1 );
+    }
+} % class mk_hybridTest_polyCLG_bnet_orig

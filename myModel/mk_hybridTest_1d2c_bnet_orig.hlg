@@ -1,0 +1,68 @@
+Wed Dec 08 19:20:43 2010
+
+
+Moral links:
+
+    Marrying X and Y
+    Marrying A and X
+    Marrying A and Y
+
+
+Necessary fill-ins:
+
+
+
+Triangulating prime component with 4 members:
+    W, Y, X, A
+This component is a clique of cost 20
+
+
+Total cost of triangulation for all prime components is 20
+
+
+Elimination sequence:
+
+    X
+    Y
+    W
+    A
+
+
+Cliques:
+
+Clique 1, 4 members, table size = 2 + 18:
+    A, W, Y, X
+
+Total clique table size: 2 + 18
+
+
+The junction forest:
+
+Creating junction tree with clique 1 as root ...
+
+
+Assignment of potentials to cliques:
+
+    Node W assigned to clique 1
+    Node Y assigned to clique 1
+    Node X assigned to clique 1
+    Node A assigned to clique 1
+
+
+Checking conditional probability potentials:
+
+
+Beliefs for chance nodes:
+
+    W:
+	Mean: -2.2   Variance: 2.46   SD: 1.56844
+
+    Y:
+	Mean: 3   Variance: 0.5   SD: 0.707107
+
+    X:
+	Mean: -3   Variance: 1   SD: 1
+
+    A:
+	a1         0.8
+	a2         0.2

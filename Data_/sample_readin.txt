@@ -1,0 +1,68 @@
+Gch_comingSoon999
+0 3 6 0 1 0 0
+N6 N5 N8 
+2 3 2
+N8 1 2 
+N5 N6
+1 0
+.25 .75 
+0.5510288 0.4489712
+N5 3 
+0.3333328 0.33333367 0.3333328
+N6 2
+0.4999989 0.49999693
+N8 2
+0.5085031 0.49149314
+6 100.12542 84.4695 
+###===
+1 0 4 55.029358 1 0 0  
+N5 2 2 
+N8 N6
+1 1
+0.113813534 0.77237296
+0.1977148 0.1977148 0.60457015
+N6 2 
+0.4999989 0.499996
+N5 3
+0.2994283 0.29942888 0.40114138
+N8 2
+0.5085031 0.4914929
+4 160.56232 79.67487 
+6 100.1254 84.4695
+###===
+N6 N8 (resolve question id and its resolved state)
+1 2
+N5 3 (marginal prob. vector in whatever order)
+.2 .6 .2
+N8 2
+.5 .5
+N9 3
+.3333 .3333 .3334
+3 103.1 78.2 (all active user scoreEV in whatever order)
+6 102.3 6.33
+###===
+3 1 7 0 1 0 1 (Ite3, adding one qeustion, user7,no cash added,regular trade,no resolving question, revert trade at the end)
+N9
+3
+N8 1 0 (direct edit)
+.25 .75 (edit limit)
+.3 .7 (target prob. vector)
+N5 3 (marginal prob. vector in whatever order)
+.2 .6 .2
+N8 2
+.5 .5
+N9 3
+.3333 .3333 .3334
+3 103.1 58.2 (all active user scoreEV, cash in whatever order)
+6 102.3 33.6
+7 101.12 84.3
+x (iteration #x for revert trade, all users' asset back to the point right before that iteration. But market probability is still the current)
+3 101.1 58 (all active users scoreEV and cash in whateve order)
+6 103.2 66.3
+7 114.5 78.1
+N5 3 (marginal prob. vector in whatever order)
+.2 .6 .2
+N8 2
+.5 .5
+N9 3
+.3333 .3333 .3334

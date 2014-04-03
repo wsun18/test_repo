@@ -1,0 +1,89 @@
+
+function isTree = check_netStructure(dag) 
+% from the dag from a bnet, check if it has the tree structure
+% -wsun, 12 March 2011
+
+% Basic rules to determine loops
+% 1. For each root node, check its descendants, see if any pair of its
+%    descentdants have common children; 
+% 2. Make the network undirecked first, then from any node in the undirected
+%    network, travel the network through any possible path to see if we can 
+%    go back to the starting node. If so, return 0 to indicate that there
+%    is at least one loop. 
+
+%%%%%%%%%%%%% version of 13 March 2011 %%%%%%%%%%%%
+% =================================================
+non = length(dag); % number of nodes
+
+ddag = dag + dag' ; % make the network undirected.
+
+visited = 1 ; % started from the first node
+
+while length(visited) < non    
+    curr = visited(end) ;
+    visitingNodes = find(ddag(curr,:)==1) ;  
+    ddag(visitingNodes,curr) = 0 ; % forbid the return path
+    
+    while ~isempty(visitingNodes)
+        next = visitingNodes(end) ; % first visit the last node in the list.                
+        visited(end+1) = next ;        
+        visitingNodes = visitingNodes(1:end-1); % remove the node just visited.
+        candList = find(ddag(next,:)==1) ;        
+ 
+        if intersect(candList, visitingNodes)
+            isTree = 0 ;
+            return; 
+        end
+        
+        ncand = length(candList) ;
+        visitingNodes(end+1:end+ncand) = candList ;
+        
+        if ~isempty(candList)
+            ddag(candList,next) = 0 ; % forbid the return path
+        end
+    end        
+end
+
+isTree = 1 ;
+% =============================================
+
+
+%%%%%%%%%%%%% version of 12 March 2011 %%%%%%%%%%%%
+% =================================================
+if 0
+non = length(dag); % number of nodes
+visited = zeros(1,non) ;
+nodes = find(visited == 0) ;
+
+while ~isempty(nodes)    
+    next = nodes(1) ;    
+    visited(1, next) = 1 ;
+    descendantList = zeros(1,non) ;        
+    visitingList = zeros(1,non) ;
+    cs = find(dag(next,:));     
+       
+    descendantList(1,cs) = 1 ;
+    visitingList(1,cs) = 1 ;
+    descendantNodes = find(descendantList==1) ;
+    visitingNodes = find(visitingList==1) ;
+    while ~isempty(visitingNodes) 
+        next = visitingNodes(1) ;
+        visited(1,next) = 1 ;
+        cs = find(dag(next,:));         
+        
+        if intersect(cs, descendantNodes)
+            isTree = 0;
+            return;
+        end
+        
+        descendantList(1,cs) = 1 ;
+        visitingList(1,next) = 0 ;
+        visitingList(1,cs) = 1 ;
+        descendantNodes = find(descendantList==1) ;
+        visitingNodes = find(visitingList==1) ;
+    end        
+    nodes = find(visited == 0)    
+end
+isTree = 1 ;
+end
+% =================================================

@@ -1,0 +1,35 @@
+function bar_score = bf_scoreEV(model,jp,asset,Assm,assm)
+% This is to calculate the expected score given conditions (Assm=assm)
+% 9/16/2012, wsun
+
+if nargin < 4
+    bar_score = sum(jp .* asset) ;
+    return ;
+elseif nargin ~= 5
+    error('Number of arguments has to be 5 if given condition');
+end
+
+node_names = model.node_names ;
+ns = model.sizes ;
+
+indAssm = [] ;
+for k=1:length(Assm)
+    indAssm = [indAssm findindex4stringcell(node_names, Assm{k})] ;
+end
+
+h_cc = full_combination_new(ns) ;
+noi = size(h_cc,1); % number of instances
+
+k=1 ;
+for i=1:noi
+    instance = h_cc(i,:);   
+    if isequal(instance(indAssm),assm)
+        subprob(k) = jp(i) ;
+        subasset(k) = asset(i) ;
+        k = k+1 ;
+    end
+end
+
+subprob = subprob/sum(subprob) ;
+bar_score = sum(subprob .* subasset) ;
+

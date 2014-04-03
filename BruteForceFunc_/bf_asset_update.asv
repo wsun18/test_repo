@@ -1,0 +1,40 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%% *************************************************************
+function asset = bf_asset_update(jp_after,jp_before,b,log_base)
+% This is to update the asset table using LMSR.
+% 9/19/2012,wsun
+
+if log_base==2
+    asset =  
+
+
+node_names = model.node_names ;
+ns = model.sizes ;
+dom = model.domain ;
+
+if ~isempty(Assm)
+    indAssm = [] ;
+    for k=1:length(Assm)
+        indAssm = [indAssm findindex4stringcell(node_names, Assm{k})] ;
+    end
+end
+indTarg = findindex4stringcell(node_names, Targ);
+
+h_cc = full_combination_new(ns) ;
+noi = size(h_cc,1); % number of instances
+jp_after = jp_before ;
+% update the joint probability for all joint states
+for i=1:noi
+    instance = h_cc(i,:);   
+    if ~isempty(Assm)
+        if isequal(instance(indAssm),assm)
+            targ_state = instance(indTarg) ;
+            jp_after(i) = jp_before(i) * tprob(targ_state)/cprob(targ_state) ;
+        end
+    else
+        targ_state = instance(indTarg) ;
+        jp_after(i) = jp_before(i) * tprob(targ_state)/cprob(targ_state) ;
+    end   
+end
+
+
